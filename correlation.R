@@ -14,3 +14,5 @@ plot(data$Economy..GDP.per.Capita., data$Happiness.Score,
      ylab = "Happiness Score",
      pch = 19,
      col = "blue")
+# Add a trend line (linear regression line)
+abline(lm(Happiness.Score ~ Economy..GDP.per.Capita., data = data), col = "red")
