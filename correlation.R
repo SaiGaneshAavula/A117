@@ -8,3 +8,9 @@ boxplot(Happiness.Score ~ Country, data = data,
         las = 2,
         varwidth=TRUE,# Rotate x-axis labels for readability
         bg = "red")
+plot(data$Economy..GDP.per.Capita., data$Happiness.Score,
+     main = "Correlation between GDP per Capita and Happiness Score",
+     xlab = "Economy (GDP per Capita)",
+     ylab = "Happiness Score",
+     pch = 19,
+     col = "blue")
