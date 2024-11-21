@@ -14,3 +14,7 @@ plot(data$Economy..GDP.per.Capita., data$Happiness.Score,
      col = "blue")
 # Add a trend line (linear regression line)
 abline(lm(Happiness.Score ~ Economy..GDP.per.Capita., data = data), col = "red")
+
+# Pearson correlation
+correlation_result <- cor.test(data$Happiness.Score, data$Economy..GDP.per.Capita., method = "pearson")
+print(correlation_result)
